@@ -250,11 +250,42 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getHou
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/测试/" title="测试: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="测试" style="background-color: #F9EBEA;">测试
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
 
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"测试","weight":1,"link":"https://warrior.ls-ld.top/tags/测试/"}], {
+        autoResize: true
+    });
+</script>
     
 
 </main>
@@ -265,7 +296,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getHou
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">73</span>
+                <span class="white-color">114</span>
             
 
             
